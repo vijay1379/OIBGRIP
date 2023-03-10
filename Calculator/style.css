@@ -1,0 +1,72 @@
+body {
+    background-color: #c2e9fb;
+}
+
+
+h1 {
+text-align: center;
+margin-bottom: 1.5%;
+color: #fff;
+}
+
+
+.container {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+  }
+
+h1 {
+	text-align: center;
+	font-family:Monospace, 'Courier New';
+	
+  }
+
+.screen {
+	margin-bottom: 10px;
+	grid-column: 1 / -1;
+	width: 90%;
+  }
+  
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+  }
+  
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+  }
+  
+button {
+	padding: 10px;
+	font-size: 18px;
+	background-color: #eee;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	grid-column: span 1;
+	grid-row: span 1;
+  }
+
+button.equal {
+    grid-row: span 2;
+  }
+
+
+
+button.test {
+    grid-column:span 4;
+  }
+
+  button.zero {
+    grid-column: span 2;
+  }
+
+button:hover {
+	background-color: #ddd;
+  }
+  
